@@ -16,12 +16,11 @@
             left: 10px;
             width: calc(100% - 160px);
         }
+
         .dropdown {
             position: relative;
-            top: 5px;            
+            top: 5px;
         }
-
-        
     </style>
 </head>
 
@@ -37,103 +36,102 @@
         </div>
     </nav>
 
-    <form class="d-flex justify-content-start input-group mb-3 my-form" action="post.html" method="POST">
+    <form class="d-flex justify-content-start input-group mb-3 my-form" action="" method="POST">
 
         <ul class="list-group" id="group1">
             <b>Brötchen</b>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="group1" id="firstBun" checked>
-                <label class="form-check-label stretched-link" for="firstBun">Sesam</label>
+                <input class="form-check-input me-1" type="radio" name="broetchen" id="firstBun" checked>
+                <label class="form-check-label stretched-link" for="firstBun" value="Sesam">Sesam</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="group1" id="secondBun">
-                <label class="form-check-label stretched-link" for="secondBun">Mehrkorn</label>
+                <input class="form-check-input me-1" type="radio" name="broetchen" id="secondBun">
+                <label class="form-check-label stretched-link" for="secondBun" value="Mehrkorn">Mehrkorn</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="listGroupRadio" name="group1"
-                    id="thirdBun">
-                <label class="form-check-label stretched-link" for="thirdBun">Brioche</label>
+                <input class="form-check-input me-1" type="radio" name="broetchen" id="thirdBun">
+                <label class="form-check-label stretched-link" for="thirdBun" value="Brioche">Brioche</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="group1" id="noBun">
-                <label class="form-check-label stretched-link" for="fourtBun">Ohne Brötchen</label>
+                <input class="form-check-input me-1" type="radio" name="broetchen" id="noBun">
+                <label class="form-check-label stretched-link" for="fourtBun" value="Ohne">Ohne Brötchen</label>
             </li>
         </ul>
 
         <ul class="list-group" id="group2">
             <b>Patty</b>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="group2" id="firstPatty" checked>
-                <label class="form-check-label stretched-link" for="firstPatty">Beef</label>
+                <input class="form-check-input me-1" type="radio" name="patty" id="firstPatty" checked>
+                <label class="form-check-label stretched-link" for="firstPatty" value="Beef">Beef</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="group2" id="secondPatty">
-                <label class="form-check-label stretched-link" for="secondPatty">Soja</label>
+                <input class="form-check-input me-1" type="radio" name="patty" id="secondPatty">
+                <label class="form-check-label stretched-link" for="secondPatty" value="Soja">Soja</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="group2" id="thirdPatty">
-                <label class="form-check-label stretched-link" for="thirdPatty">Seitan</label>
+                <input class="form-check-input me-1" type="radio" name="patty" id="thirdPatty">
+                <label class="form-check-label stretched-link" for="thirdPatty" value="Seitan">Seitan</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="group2" id="noPatty">
-                <label class="form-check-label stretched-link" for="noPatty">Ohne Patty</label>
+                <input class="form-check-input me-1" type="radio" name="patty" id="noPatty">
+                <label class="form-check-label stretched-link" for="noPatty" value="Ohne">Ohne Patty</label>
             </li>
         </ul>
         <ul class="list-group">
             <b>Salat</b>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" id="firstGreen">
-                <label class="form-check-label stretched-link" for="firstGreen">Eisbergsalat</label>
+                <input class="form-check-input me-1" type="checkbox" name="salat" id="firstGreen">
+                <label class="form-check-label stretched-link" for="firstGreen" value="Eisbergsalat">Eisbergsalat</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" id="secondGreen">
-                <label class="form-check-label stretched-link" for="secondGreen">Gurken</label>
+                <input class="form-check-input me-1" type="checkbox" name="salat" id="secondGreen">
+                <label class="form-check-label stretched-link" for="secondGreen" value="Gurken">Gurken</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" id="thirdGreen">
-                <label class="form-check-label stretched-link" for="thirdGreen">Tomaten</label>
+                <input class="form-check-input me-1" type="checkbox" name="salat" id="thirdGreen">
+                <label class="form-check-label stretched-link" for="thirdGreen" value="Tomaten">Tomaten</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" id="fourtGreen">
-                <label class="form-check-label stretched-link" for="fourtGreen">Zwiebeln</label>
+                <input class="form-check-input me-1" type="checkbox" name="salat" id="fourtGreen">
+                <label class="form-check-label stretched-link" for="fourtGreen" value="Zwiebeln">Zwiebeln</label>
             </li>
         </ul>
         <ul class="list-group" id="group3">
             <b>Käse</b>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="group3" id="firstCheese" checked>
-                <label class="form-check-label stretched-link" for="firstCheese">Gouda</label>
+                <input class="form-check-input me-1" type="radio" name="kaese" id="firstCheese" checked>
+                <label class="form-check-label stretched-link" for="firstCheese" value="Gouda">Gouda</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="group3" id="secondCheese">
-                <label class="form-check-label stretched-link" for="secondCheese">Cheddar</label>
+                <input class="form-check-input me-1" type="radio" name="kaese" id="secondCheese">
+                <label class="form-check-label stretched-link" for="secondCheese" value="Cheddar">Cheddar</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="group3" id="thirdCheese">
-                <label class="form-check-label stretched-link" for="thirdCheese">Vegan Cheese</label>
+                <input class="form-check-input me-1" type="radio" name="kaese" id="thirdCheese">
+                <label class="form-check-label stretched-link" for="thirdCheese" value="Vegan Cheese">Vegan Cheese</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="radio" name="group3" id="noCheese">
-                <label class="form-check-label stretched-link" for="noCheese">Ohne Käse</label>
+                <input class="form-check-input me-1" type="radio" name="kaese" id="noCheese">
+                <label class="form-check-label stretched-link" for="noCheese" value="Ohne">Ohne Käse</label>
             </li>
         </ul>
         <ul class="list-group">
             <b>Saucen</b>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" id="firstCheckbox">
-                <label class="form-check-label" for="firstCheckbox">Ketchup</label>
+                <input class="form-check-input me-1" type="checkbox" name="sauce" id="firstCheckbox">
+                <label class="form-check-label" for="firstCheckbox" value="Ketchup">Ketchup</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" id="secondCheckbox">
-                <label class="form-check-label" for="secondCheckbox">Mayo</label>
+                <input class="form-check-input me-1" type="checkbox" name="sauce" id="secondCheckbox">
+                <label class="form-check-label" for="secondCheckbox" value="Mayo">Mayo</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" id="thirdCheckbox">
-                <label class="form-check-label" for="thirdCheckbox">Barbeque</label>
+                <input class="form-check-input me-1" type="checkbox" name="sauce" id="thirdCheckbox">
+                <label class="form-check-label" for="thirdCheckbox" value="Barbeque">Barbeque</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" id="thirdCheckbox">
-                <label class="form-check-label" for="thirdCheckbox">Guacamole</label>
+                <input class="form-check-input me-1" type="checkbox" name="sauce" id="thirdCheckbox">
+                <label class="form-check-label" for="thirdCheckbox" value="Guacamole">Guacamole</label>
             </li>
         </ul>
         <div class="dropdown">
@@ -142,8 +140,9 @@
                 Burger
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Burger speichern</a></li>
-                <li><a class="dropdown-item" href="#">Auswahl zurücksetzen</a></li>
+                <li><button class="dropdown-item" type="submit">Burger speichern</button></li>
+                <li><button class="dropdown-item" type="button">Auswahl zurücksetzen</button></li>
+
             </ul>
         </div>
 </body>
