@@ -20,11 +20,7 @@ class Burger(db.Model):
 def start_page():
     if request.method == 'POST':
         new_burger = Burger(
-            broetchen = request.form[''],
-            patty = request.form[''],
-            salat = request.form[''],
-            kaese = request.form[''],
-            sauce = request.form['']
+            
         )
         db.session.add(new_burger)
         db.session.commit()
