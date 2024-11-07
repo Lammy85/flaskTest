@@ -46,129 +46,115 @@
             </div>
         </div>
     </nav>
-    <div class="hstack gap-1">
-        <form class="d-flex justify-content-start input-group mb-3 my-form" action="/" method="POST">
-            <div class="p-1">
-                <ul class="list-group" id="group1">
-                    <b>Brötchen</b>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="broetchen" id="firstBun" value="Sesam"
-                            checked>
-                        <label class="form-check-label stretched-link" for="firstBun">Sesam</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="broetchen" id="secondBun"
-                            value="Mehrkorn">
-                        <label class="form-check-label stretched-link" for="secondBun">Mehrkorn</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="broetchen" id="thirdBun"
-                            value="Brioche">
-                        <label class="form-check-label stretched-link" for="thirdBun">Brioche</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="broetchen" id="noBun" value="Ohne">
-                        <label class="form-check-label stretched-link" for="fourtBun">Ohne Brötchen</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="p-1">
-                <ul class="list-group" id="group2">
-                    <b>Patty</b>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="patty" id="firstPatty" value="Beef"
-                            checked>
-                        <label class="form-check-label stretched-link" for="firstPatty">Beef</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="patty" id="secondPatty" value="Soja">
-                        <label class="form-check-label stretched-link" for="secondPatty">Soja</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="patty" id="thirdPatty" value="Seitan">
-                        <label class="form-check-label stretched-link" for="thirdPatty">Seitan</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="patty" id="noPatty" value="Ohne">
-                        <label class="form-check-label stretched-link" for="noPatty">Ohne Patty</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="p-1">
-                <ul class="list-group">
-                    <b>Salat</b>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" name="salatoption" id="firstGreen"
-                            value="Eisbergsalat">
-                        <label class="form-check-label stretched-link" for="firstGreen">Eisbergsalat</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" name="salatoption" id="secondGreen"
-                            value="Gurken">
-                        <label class="form-check-label stretched-link" for="secondGreen">Gurken</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" name="salatoption" id="thirdGreen"
-                            value="Tomaten">
-                        <label class="form-check-label stretched-link" for="thirdGreen">Tomaten</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" name="salatoption" id="fourtGreen"
-                            value="Zwiebeln">
-                        <label class="form-check-label stretched-link" for="fourtGreen">Zwiebeln</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="p-1">
-                <ul class="list-group" id="group3">
-                    <b>Käse</b>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="kaese" id="firstCheese" value="Gouda"
-                            checked>
-                        <label class="form-check-label stretched-link" for="firstCheese">Gouda</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="kaese" id="secondCheese"
-                            value="Cheddar">
-                        <label class="form-check-label stretched-link" for="secondCheese">Cheddar</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="kaese" id="thirdCheese"
-                            value="Vegan Cheese">
-                        <label class="form-check-label stretched-link" for="thirdCheese">Vegan Cheese</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="radio" name="kaese" id="noCheese" value="Ohne">
-                        <label class="form-check-label stretched-link" for="noCheese">Ohne Käse</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="p-1">
-                <ul class="list-group">
-                    <b>Saucen</b>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="firstSauce"
-                            value="Ketchup">
-                        <label class="form-check-label" for="firstSauce">Ketchup</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="secondSauce"
-                            value="Mayo">
-                        <label class="form-check-label" for="secondSauce">Mayo</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="thirdSauce"
-                            value="Barbeque">
-                        <label class="form-check-label" for="thirdSauce">Barbeque</label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="fourtSauce"
-                            value="Guacamole">
-                        <label class="form-check-label" for="fourtSauce">Guacamole</label>
-                    </li>
-                </ul>
-            </div>
-    </div>
+
+    <form class="d-flex justify-content-start input-group mb-3 my-form" action="/" method="POST">
+
+        <ul class="list-group" id="group1">
+            <b>Brötchen</b>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="broetchen" id="firstBun" value="Sesam" checked>
+                <label class="form-check-label stretched-link" for="firstBun">Sesam</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="broetchen" id="secondBun" value="Mehrkorn">
+                <label class="form-check-label stretched-link" for="secondBun">Mehrkorn</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="broetchen" id="thirdBun" value="Brioche">
+                <label class="form-check-label stretched-link" for="thirdBun">Brioche</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="broetchen" id="noBun" value="Ohne">
+                <label class="form-check-label stretched-link" for="noBun">Ohne Brötchen</label>
+            </li>
+        </ul>
+
+        <ul class="list-group" id="group2">
+            <b>Patty</b>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="patty" id="firstPatty" value="Beef" checked>
+                <label class="form-check-label stretched-link" for="firstPatty">Beef</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="patty" id="secondPatty" value="Soja">
+                <label class="form-check-label stretched-link" for="secondPatty">Soja</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="patty" id="thirdPatty" value="Seitan">
+                <label class="form-check-label stretched-link" for="thirdPatty">Seitan</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="patty" id="noPatty" value="Ohne">
+                <label class="form-check-label stretched-link" for="noPatty">Ohne Patty</label>
+            </li>
+        </ul>
+
+        <ul class="list-group">
+            <b>Salat</b>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" name="salatoption" id="firstGreen"
+                    value="Eisbergsalat">
+                <label class="form-check-label stretched-link" for="firstGreen">Eisbergsalat</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" name="salatoption" id="secondGreen" value="Gurken">
+                <label class="form-check-label stretched-link" for="secondGreen">Gurken</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" name="salatoption" id="thirdGreen" value="Tomaten">
+                <label class="form-check-label stretched-link" for="thirdGreen">Tomaten</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" name="salatoption" id="fourtGreen"
+                    value="Zwiebeln">
+                <label class="form-check-label stretched-link" for="fourtGreen">Zwiebeln</label>
+            </li>
+        </ul>
+
+        <ul class="list-group" id="group3">
+            <b>Käse</b>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="kaese" id="firstCheese" value="Gouda" checked>
+                <label class="form-check-label stretched-link" for="firstCheese">Gouda</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="kaese" id="secondCheese" value="Cheddar">
+                <label class="form-check-label stretched-link" for="secondCheese">Cheddar</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="kaese" id="thirdCheese" value="Vegan Cheese">
+                <label class="form-check-label stretched-link" for="thirdCheese">Vegan Cheese</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="kaese" id="noCheese" value="Ohne">
+                <label class="form-check-label stretched-link" for="noCheese">Ohne Käse</label>
+            </li>
+        </ul>
+
+        <ul class="list-group">
+            <b>Saucen</b>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="firstSauce" value="Ketchup">
+                <label class="form-check-label" for="firstSauce">Ketchup</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="secondSauce" value="Mayo">
+                <label class="form-check-label" for="secondSauce">Mayo</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="thirdSauce"
+                    value="Barbeque">
+                <label class="form-check-label" for="thirdSauce">Barbeque</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="fourtSauce"
+                    value="Guacamole">
+                <label class="form-check-label" for="fourtSauce">Guacamole</label>
+            </li>
+        </ul>
+    
+
+
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Burger
@@ -178,6 +164,8 @@
             <li><button class="dropdown-item" type="reset">Auswahl zurücksetzen</button></li>
         </ul>
     </div>
+</form>
+
 </body>
 
 </html>

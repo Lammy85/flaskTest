@@ -47,7 +47,7 @@ def tabelle():
         daten = Burger.query.all()
         return render_template('burgerlist.html', daten=daten)
 
-@app.route('/delete/<int:burger_id>', methods=['DELETE'])
+@app.route('/tabelle/<int:burger_id>', methods=['DELETE'])
 def delete_burger(burger_id):
     burger = Burger.query.get(burger_id)
     if burger:
