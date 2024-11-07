@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from datetime import *
 
@@ -43,10 +43,9 @@ def start_page():
     return render_template('index.html')
 
 @app.route('/tabelle')
-
 def tabelle():
-    daten = Burger.query.all()
-    return render_template('burgerliste.html',daten=daten)
+        daten = Burger.query.all()
+        return render_template('burgerlist.html', daten=daten)
 
 if __name__ == "__main__":
     app.run()
