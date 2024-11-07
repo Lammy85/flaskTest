@@ -42,5 +42,11 @@ def start_page():
     
     return render_template('index.html')
 
+@app.route('/tabelle')
+
+def tabelle():
+    daten = Burger.query.all()
+    return render_template('burgerliste.html',daten=daten)
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

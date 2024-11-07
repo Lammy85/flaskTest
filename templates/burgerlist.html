@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste</title>
+</head>
+<style></style>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="static/hamburger-svgrepo-com.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Lecker Burger
+            </a>
+        </div>
+    </nav>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Wert</th>
+        </tr>
+        {% for eintrag in daten %}
+        <tr>
+            <td>{{ eintrag.id }}</td>
+            <td>{{ eintrag.broetchen }}</td>
+            <td>{{ eintrag.patty }}</td>
+            <td>{{ eintrag.salat }}</td>
+            <td>{{ eintrag.kaese }}</td>
+            <td>{{ eintrag.sauce }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
