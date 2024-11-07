@@ -33,6 +33,16 @@
                     class="d-inline-block align-text-top">
                 Lecker Burger
             </a>
+            <div class="navbar-expand">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="{{ url_for('tabelle') }}">Burger</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -80,7 +90,8 @@
         <ul class="list-group">
             <b>Salat</b>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" name="salatoption" id="firstGreen" value="Eisbergsalat">
+                <input class="form-check-input me-1" type="checkbox" name="salatoption" id="firstGreen"
+                    value="Eisbergsalat">
                 <label class="form-check-label stretched-link" for="firstGreen">Eisbergsalat</label>
             </li>
             <li class="list-group-item">
@@ -92,7 +103,8 @@
                 <label class="form-check-label stretched-link" for="thirdGreen">Tomaten</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" name="salatoption" id="fourtGreen" value="Zwiebeln">
+                <input class="form-check-input me-1" type="checkbox" name="salatoption" id="fourtGreen"
+                    value="Zwiebeln">
                 <label class="form-check-label stretched-link" for="fourtGreen">Zwiebeln</label>
             </li>
         </ul>
@@ -126,11 +138,13 @@
                 <label class="form-check-label" for="secondSauce">Mayo</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="thirdSauce" value="Barbeque">
+                <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="thirdSauce"
+                    value="Barbeque">
                 <label class="form-check-label" for="thirdSauce">Barbeque</label>
             </li>
             <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="fourtSauce" value="Guacamole">
+                <input class="form-check-input me-1" type="checkbox" name="sauceoption" id="fourtSauce"
+                    value="Guacamole">
                 <label class="form-check-label" for="fourtSauce">Guacamole</label>
             </li>
         </ul>
@@ -142,7 +156,6 @@
             <ul class="dropdown-menu">
                 <li><button class="dropdown-item" type="submit">Burger speichern</button></li>
                 <li><button class="dropdown-item" type="reset">Auswahl zurücksetzen</button></li>
-                <li><a class="dropdown-item" href="{{ url_for('tabelle') }}">Liste</a></li>
             </ul>
         </div>
 </body>
