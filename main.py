@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from datetime import *
 
@@ -46,6 +46,15 @@ def start_page():
 def tabelle():
         daten = Burger.query.all()
         return render_template('burgerlist.html', daten=daten)
+
+@app.route('/delete/<int:burger_id>', methods=['DELETE'])
+def delete_burger(burger_id):
+    burger = Burger.query.get(burger_id)
+    if burger:
+        db.session.delete(burger)
+        db.session.commit()
+        return jsonify({'success': True}), 200
+    return jsonify({'error': 'Datensatz nicht gefunden'}), 404
 
 if __name__ == "__main__":
     app.run()
