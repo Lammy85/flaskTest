@@ -27,6 +27,21 @@
             top: 5px;
             left: 5px;
         }
+
+        .data-table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #cecfd5;
+            padding: 10px 15px;
+        }
+
+        thead {
+            background: #8d00ce;
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -50,33 +65,33 @@
             </div>
         </div>
     </nav>
-    
-        <form class="d-flex justify-content-start input-group mb-3 my-form" method="POST">
-            <table class="data-table table-striped table-hover" id="data-table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Brötchen</th>
-                        <th>Patty</th>
-                        <th>Salat</th>
-                        <th>Käse</th>
-                        <th>Sauce</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for burger in daten %}
-                    <tr data-id="{{ burger.id }}" onclick="selectRow(this)">
-                        <td>{{ burger.id }}</td>
-                        <td>{{ burger.broetchen }}</td>
-                        <td>{{ burger.patty }}</td>
-                        <td>{{ burger.salat }}</td>
-                        <td>{{ burger.kaese }}</td>
-                        <td>{{ burger.sauce }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </form>
+
+    <form class="d-flex justify-content-start input-group mb-3 my-form" method="POST">
+        <table class="data-table table-striped table-hover" id="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Brötchen</th>
+                    <th>Patty</th>
+                    <th>Salat</th>
+                    <th>Käse</th>
+                    <th>Sauce</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for burger in daten %}
+                <tr data-id="{{ burger.id }}" onclick="selectRow(this)">
+                    <td>{{ burger.id }}</td>
+                    <td>{{ burger.broetchen }}</td>
+                    <td>{{ burger.patty }}</td>
+                    <td>{{ burger.salat }}</td>
+                    <td>{{ burger.kaese }}</td>
+                    <td>{{ burger.sauce }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </form>
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Burger
@@ -91,7 +106,7 @@
         function selectRow(row) {
 
             document.querySelectorAll('#data-table tr').forEach(r => r.classList.remove('selected'));
-            
+
             row.classList.add('selected');
 
             selectedId = row.getAttribute('data-id');
