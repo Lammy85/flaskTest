@@ -52,6 +52,12 @@ def start_page():
     
     return render_template('index.html')
 
+#Endpoint zum Kontaktformular
+
+@app.route('/kontakt')
+def kontakt():
+     return render_template('contact.html')
+
 #Endpoint Seite mit Tabelle
 
 @app.route('/tabelle')
@@ -69,6 +75,8 @@ def delete_burger(burger_id):
         db.session.commit()
         return jsonify({'success': True}), 200 #HTTP-Statuscode -> OK
     return jsonify({'error': 'Datensatz nicht gefunden'}), 404 #HTTP-Statuscode -> Not Found
+
+
 
 if __name__ == "__main__":
     app.run()
