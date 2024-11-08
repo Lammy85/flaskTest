@@ -19,6 +19,7 @@ class Burger(db.Model):
     salat = db.Column(db.String(200), nullable=True)
     kaese = db.Column(db.String(200), nullable=True)
     sauce = db.Column(db.String(200), nullable=True)
+    created_at = db.Column(db.DateTime(), default=datetime.now)
 
 #Startseite
 
@@ -55,7 +56,7 @@ def start_page():
 
 @app.route('/tabelle')
 def tabelle():
-        daten = Burger.query.all()
+        daten = Burger.query.order_by(Burger.created_at).all()
         return render_template('burgerlist.html', daten=daten)
 
 #Löschen eines Datensatzes

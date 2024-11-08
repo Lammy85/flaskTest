@@ -103,6 +103,7 @@
                     <th>Salat</th>
                     <th>Käse</th>
                     <th>Sauce</th>
+                    <th>Erstellungszeitpunkt</th>
                 </tr>
             </thead>
             <tbody>
@@ -117,6 +118,7 @@
                     <td>{{ burger.salat }}</td>
                     <td>{{ burger.kaese }}</td>
                     <td>{{ burger.sauce }}</td>
+                    <td>{{ burger.created_at.strftime('%d.%m.%Y %H:%M') }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
