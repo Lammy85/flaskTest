@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from datetime import *
 
-#Erstellen und Konfigurieren der App
+#Erstellen und Konfigurieren einer Instanz
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.db'
@@ -21,7 +21,7 @@ class Burger(db.Model):
     sauce = db.Column(db.String(200), nullable=True)
     created_at = db.Column(db.DateTime(), default=datetime.now)
 
-#Startseite
+#Endpoint Startseite mit HTTP-Methoden
 
 @app.route('/', methods=['GET', 'POST'])
 def start_page():
@@ -52,14 +52,14 @@ def start_page():
     
     return render_template('index.html')
 
-#Seite mit Tabelle
+#Endpoint Seite mit Tabelle
 
 @app.route('/tabelle')
 def tabelle():
         daten = Burger.query.order_by(Burger.created_at).all()
         return render_template('burgerlist.html', daten=daten)
 
-#Löschen eines Datensatzes
+#Endpoint mit HTTP-Methode zum Löschen eines Datensatzes
 
 @app.route('/tabelle/<int:burger_id>', methods=['DELETE'])
 def delete_burger(burger_id):
@@ -67,8 +67,8 @@ def delete_burger(burger_id):
     if burger:
         db.session.delete(burger)
         db.session.commit()
-        return jsonify({'success': True}), 200
-    return jsonify({'error': 'Datensatz nicht gefunden'}), 404
+        return jsonify({'success': True}), 200 #HTTP-Statuscode -> OK
+    return jsonify({'error': 'Datensatz nicht gefunden'}), 404 #HTTP-Statuscode -> Not Found
 
 if __name__ == "__main__":
     app.run()
